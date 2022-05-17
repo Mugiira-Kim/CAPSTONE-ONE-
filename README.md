@@ -6,7 +6,7 @@
 
 ![screenshot] ![Screenshot_2022-05-17_22-19-07 (1)](https://user-images.githubusercontent.com/99125250/168893139-2edfb09a-3d95-4231-8028-31e956edcd4a.png)
 
-This project is my first capstone for my first module at Microverse Inc.  The project is built with HTML, CSS and JavaScript. The information on the page is completely made up and should not be distributed, it is strictly for learning purposes. 
+This project is my first capstone project at Microverse. The project is built with HTML, CSS and JavaScript. The information on the page is completely made up and should not be distributed, it is strictly for learning purposes. 
 
 ## Built With
 
