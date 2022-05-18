@@ -89,7 +89,7 @@ li {
 .title .title-details h4 {
   color: var(--orange);
   font-family: var(--font-lato);
-  font-size: 20px;
+  display: none;
 }
 
 .title .title-details h1 {
@@ -98,7 +98,7 @@ li {
   max-width: 80%;
   margin-top: 20px;
   font-family: var(--font-coco);
-  font-size: 35px;
+  font-size: 30px;
   line-height: 35px;
 }
 
@@ -351,6 +351,7 @@ iframe {
     margin-right: 15rem;
     display: flex;
     justify-content: flex-end;
+    float: right;
   }
 
   nav ul a {
@@ -368,11 +369,11 @@ iframe {
   }
 
   header .logo {
-    margin-left: 7rem;
+    margin: auto;
   }
 
   header .header-links {
-    margin-right: 15rem;
+    margin: auto;
   }
 
   header .header-links a {
@@ -397,7 +398,7 @@ iframe {
   }
 
   .title {
-    background-image: url(images/africa.jpg);
+    background-image: url(images/aboutwp.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -406,7 +407,7 @@ iframe {
   .title-container {
     padding: 5rem 7rem;
     padding-bottom: 54px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     height: 100vh;
     margin: auto;
     z-index: 0;
@@ -415,23 +416,25 @@ iframe {
   .title-details {
     align-items: center;
     position: absolute;
-    top: 60%;
+    top: 63%;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 
   .title h4 {
+    display: block;
     color: var(--orange);
     font-family: var(--font-lato);
     font-size: 20px;
+    margin-bottom: 1rem;
   }
 
   .title .title-details h1 {
     color: var(--orange);
     text-transform: uppercase;
     max-width: 80%;
-    margin-top: 20px;
+    margin: auto;
     font-family: var(--font-coco);
     font-size: 35px;
     line-height: 35px;
