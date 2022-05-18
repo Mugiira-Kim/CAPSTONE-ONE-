@@ -1,0 +1,779 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --dark: #272a31;
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+  --font-coco: "COCOGOOSE", sans-serif;
+  --font-lato: "Lato", sans-serif;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#hamburger {
+  display: block;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+nav {
+  display: none;
+}
+
+header {
+  display: none;
+}
+
+.title-container {
+  padding: 2rem 2rem;
+  padding-bottom: 54px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  z-index: 0;
+}
+
+.title-container h4 {
+  font-size: 12px;
+}
+
+.gradient {
+  display: none;
+}
+
+.title {
+  background-image: url(images/rotateafrica.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title h4 {
+  color: var(--orange);
+  font-family: var(--font-lato);
+  font-size: 20px;
+}
+
+.mobiletitle {
+  display: block;
+  font-size: 22px;
+  font-family: var(--font-coco);
+  background-image: url(images/gradientpic.png);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1rem;
+}
+
+.event-description {
+  font-size: 12px;
+  font-family: var(--font-lato);
+  margin-bottom: 10px;
+}
+
+#time h2 {
+  font-size: 18px;
+  font-family: var(--font-coco);
+}
+
+.presidentsDiv p {
+  text-align: left;
+  font-family: var(--font-lato);
+  font-size: 12px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.footer-header p {
+  font-family: var(--font-lato);
+  color: #fff;
+  font-size: 18px;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#time p {
+  font-size: 14px;
+}
+
+.program-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.program {
+  background-image: url(images/progambg.png);
+  padding: 2px;
+  height: auto;
+}
+
+.program-details .more-details {
+  font-family: var(--font-lato);
+  color: #fff;
+  font-size: 18px;
+  margin: 2rem;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.program-details .program-header {
+  font-family: var(--font-lato);
+  color: #fff;
+  font-size: 14px;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.program .program-details .underline {
+  border: solid var(--orange) 1px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.program-cards {
+  padding: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.program-cards .card_item {
+  padding: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  margin: 2px;
+  transition-duration: 400ms;
+}
+
+.program-cards .card_item:hover {
+  border: solid white 3px;
+}
+
+.program-cards .card_inner {
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+}
+
+.program-cards .card_item img {
+  color: var(--orange);
+  width: auto;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.program-cards .card_item .card_title {
+  color: var(--orange);
+  font-family: var(--font-lato);
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 0.3rem;
+  width: 25%;
+}
+
+.program-cards .card_item .card-text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  width: 100%;
+  margin-left: 0.5rem;
+  text-align: left;
+  font-family: var(--font-lato);
+}
+
+.program-btn {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.program-btn:hover {
+  background-color: #fff;
+  color: var(--orange);
+}
+
+.more-details h5 {
+  display: none;
+}
+
+.speakers {
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: var(--font-lato);
+  padding: 10px;
+}
+
+.speaker-heading h5 {
+  font-size: 20px;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.presidentsDiv .imageContainer {
+  width: 100%;
+  margin-top: 1rem;
+  display: none;
+}
+
+.footer hr {
+  border: solid var(--orange) 1px;
+  background: #ccc;
+  align-items: center;
+  width: 13%;
+  margin: auto;
+}
+
+.presidentsDiv hr {
+  border: solid #ccc 0.8px;
+  width: 13%;
+  margin-top: 1.5rem;
+}
+
+.speakers .speaker-heading hr {
+  border: solid var(--orange) 1px;
+  align-items: center;
+  width: 13%;
+  margin: auto;
+}
+
+.presidentsDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.presidentsDiv .imageContainer .presidentImage {
+  width: auto;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+.presidentDetails {
+  text-align: left;
+  color: var(--orange);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.infoText {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.presidentName {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.infoContainer {
+  margin-left: 1rem;
+}
+
+.footer .footer1 {
+  background-color: #3d3d3d;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.footer .footer1 ul img {
+  width: 120px;
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.footer .footer1 ul {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer2 {
+  padding: 10px;
+  font-family: var(--font-lato);
+  color: var(--dark);
+  background-color: #ccc;
+  font-size: 14px;
+  display: flex;
+}
+
+.footer2 .footer-logo {
+  margin: auto;
+  width: 100%;
+}
+
+.footer-description {
+  margin: 1rem 0;
+}
+
+#show-menu {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  flex-direction: column;
+  opacity: 0.9;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(204, 204, 204, 0.9);
+  list-style-type: none;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  display: none;
+}
+
+#show-menu #close-icon {
+  color: var(--dark);
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+#show-menu .toggle-menu {
+  color: var(--dark);
+  margin: 4rem;
+  align-items: center;
+  font-style: var(--font-coco);
+}
+
+#show-more {
+  background-color: transparent;
+  color: var(--dark);
+  font-size: 14px;
+  padding: 0.2rem;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-lato);
+}
+
+.fa-angle-down {
+  color: var(--orange);
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* load more section */
+.presidentsDiv .imageContainer:nth-child(1),
+.presidentsDiv .imageContainer:nth-child(2) {
+  display: flex;
+}
+
+/* Mobile styling begins here */
+
+@media only screen and (min-width: 768px) {
+  .flex-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  nav {
+    background-color: var(--dark);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: var(--font-lato);
+    color: #fff;
+    height: 30px;
+  }
+
+  .mobiletitle {
+    display: none;
+  }
+
+  nav li {
+    color: #fff;
+    margin-left: 2rem;
+  }
+
+  nav ul {
+    margin-right: 15rem;
+  }
+
+  nav ul a {
+    color: #fff;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+  }
+
+  header .logo {
+    margin: auto;
+  }
+
+  header .header-links {
+    margin: auto;
+  }
+
+  header .header-links a {
+    margin-left: 2rem;
+    color: var(--dark);
+    font-size: 16px;
+    font-family: var(--font-lato);
+    transition: all;
+    transition-duration: 500ms;
+  }
+
+  header .header-links a:hover {
+    color: var(--orange);
+  }
+
+  #nav-button {
+    border: var(--orange) solid 3px;
+    color: var(--orange);
+    padding: 6px;
+    font-size: 16px;
+    background-color: #fff;
+    transition-duration: 500ms;
+  }
+
+  #nav-button:hover {
+    border: var(--dark) solid 3px;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    background-color: var(--orange);
+  }
+
+  .title h4 {
+    color: var(--orange);
+    font-family: var(--font-lato);
+    font-size: 20px;
+  }
+
+  .title .title-details h1 {
+    color: var(--orange);
+    text-transform: uppercase;
+    max-width: 80%;
+    margin-top: 20px;
+    font-family: var(--font-coco);
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .gradient {
+    display: block;
+    background-image: url(images/gradientpic.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title .event-description {
+    border: solid #fff 3px;
+    padding: 4px;
+    margin-top: 2rem;
+    max-width: 70%;
+  }
+
+  .footer-header p {
+    font-family: var(--font-lato);
+    color: #fff;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .presidentsDiv p {
+    text-align: left;
+    font-family: var(--font-lato);
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  .title .event-description p {
+    color: var(--dark);
+    font-family: var(--font-lato);
+  }
+
+  .title .event-time {
+    margin-top: 2rem;
+  }
+
+  .title .event-time h2 {
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: var(--font-coco);
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .title .event-time p {
+    color: var(--dark);
+    font-family: var(--font-lato);
+    font-size: 20px;
+  }
+
+  .program {
+    background-image: url(images/progambg.png);
+    padding: 5px;
+  }
+
+  .program-btn {
+    display: none;
+  }
+
+  .program-details .program-header {
+    font-family: var(--font-lato);
+    color: #fff;
+    font-size: 25px;
+    margin: 2rem;
+    align-items: center;
+  }
+
+  .program .program-details .underline {
+    border: solid var(--orange) 1px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .program-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .program-details .more-details {
+    font-family: var(--font-lato);
+    color: #fff;
+    font-size: 20px;
+    margin: 2rem;
+    align-items: center;
+    text-decoration: underline;
+  }
+
+  .program-cards {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .program-cards .card_item {
+    padding: 1px;
+    width: 18%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    margin: 2px;
+    border: solid transparent 3px;
+    transition-duration: 400ms;
+  }
+
+  .program-cards .card_item:hover {
+    border: solid white 3px;
+  }
+
+  .program-cards .card_inner {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program-cards .card_item img {
+    color: var(--orange);
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+
+  .program-cards .card_item .card_title {
+    color: var(--orange);
+    font-family: var(--font-lato);
+    font-weight: 700;
+    font-size: 18px;
+    width: auto;
+  }
+
+  .program-cards .card_item .card-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .footer .footer1 {
+    background-color: #3d3d3d;
+    align-items: center;
+    height: 30vh;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  .footer hr {
+    border: solid var(--orange) 1px;
+    background: #ccc;
+    align-items: center;
+    width: 3%;
+    margin: auto;
+  }
+
+  .footer .footer1 ul img {
+    width: 120px;
+    height: 30px;
+    margin-left: 4rem;
+  }
+
+  .footer .footer1 ul {
+    margin: auto;
+  }
+
+  .footer-header hr {
+    color: var(--orange);
+  }
+
+  .footer2 {
+    padding: 10px;
+    font-family: var(--font-lato);
+    color: var(--dark);
+  }
+
+  .footer2 .footer-logo {
+    text-align: center;
+  }
+
+  .footer-description {
+    margin: 1rem 0;
+  }
+
+  /* Speakers Section */
+
+  .speakers {
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: var(--font-lato);
+    padding: 20px;
+  }
+
+  .speaker-heading h5 {
+    font-size: 20px;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+
+  .presidentsDiv hr {
+    border: solid #ccc 0.8px;
+    width: 13%;
+    margin-top: 0.5rem;
+  }
+
+  .speakers .speaker-heading hr {
+    border: solid var(--orange) 1px;
+    align-items: center;
+    width: 3%;
+    margin: auto;
+  }
+
+  .presidentsDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 80%;
+    overflow-x: hidden;
+  }
+
+  .presidentsDiv .imageContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .presidentsDiv .imageContainer .imagedots {
+    width: 50px;
+  }
+
+  .presidentsDiv .imageContainer .presidentImage {
+    width: 100%;
+    height: 80px;
+    margin-right: 1rem;
+  }
+
+  .presidentDetails {
+    text-align: left;
+    color: var(--orange);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 12px;
+  }
+
+  .infoText {
+    width: 250px;
+  }
+
+  .presidentName {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .infoContainer {
+    margin-left: 1rem;
+  }
+
+  #show-more {
+    display: none;
+  }
+}
