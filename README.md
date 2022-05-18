@@ -15,7 +15,7 @@ This project is my first capstone project at Microverse. The project is built wi
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://mugiira-kim.github.io/CAPSTONE-ONE-/)
 
 
 ## Getting Started
